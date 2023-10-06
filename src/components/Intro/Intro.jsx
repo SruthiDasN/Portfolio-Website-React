@@ -17,9 +17,9 @@ const Intro = () => {
     <div className="i-wrapper">
         <div className="i-left">
             <div className="i-name">
-                <span>Hi! I am</span>
-                <span>Sruthi Das N</span>
-                <span>Welcome to my portfolio – 
+                <span className='heading'>Hi! I am</span>
+                <span className='primaryText'>Sruthi Das N</span>
+                <span className='secondaryText'>Welcome to my portfolio – 
                   a testament to my relentless 
                     pursuit of excellence through 
                     self-learning and a showcase 

@@ -1,0 +1,35 @@
+.e-wrapper {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+   
+}
+.e-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;  
+    
+}
+.s-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.e-right {
+    position: relative;
+}
+.e-right>* {
+    position: absolute;
+}
+/* blur */
+.s-blur1 {
+    top: 13rem;
+    left: -18rem;
+}
+.s-blur2 {
+    left: 14rem;
+    top: 8rem;
+}

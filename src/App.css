@@ -34,6 +34,23 @@
   border: 1px solid var(--orange);
 }
 
+.heading {
+  color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.primaryText {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.secondaryText {
+  font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
 
   
 
