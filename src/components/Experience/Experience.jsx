@@ -9,7 +9,7 @@ import Resume from './Resume.pdf'
 
 const Experience = () => {
   return (
-    <div className='e-wrapper'>
+    <div className='wrapper'>
         {/* left side */}
         <div className="e-left">
            <span className='heading'>My</span> 
