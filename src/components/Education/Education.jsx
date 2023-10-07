@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Education.css'
 import mtech from '../../img/mtech.png'
 import mba from '../../img/mba.png'
@@ -8,14 +8,42 @@ import college from '../../img/college.png'
 import { useSpring, animated } from '@react-spring/web'
 
 
+
 const Education = () => {
  
-    const springProps = useSpring({
-        from: { transform: 'rotate(0deg)' },
-        to: { transform: 'rotate(360deg)' },
+    const [scrollY, setScrollY] = useState(0);
+    const [animate, setAnimate] = useState(false);
+
+    const toggleAnimation = () => {
+        setAnimate(true);
+        setTimeout(() => {
+          setAnimate(false);
+        }, 2000); // Adjust the duration to match the animation duration
+      };
+
+      const springProps = useSpring({
+        transform: animate ? 'rotate(360deg)' : 'rotate(0deg)',
         config: { duration: 2000 }, // Adjust the duration as needed
-        reset: true, // Add reset option to restart the animation when it finishes
-      }); 
+        onRest: () => {
+          if (animate) {
+            toggleAnimation();
+          }
+        },
+      });
+    
+      const handleScroll = () => {
+        setScrollY(window.scrollY);
+        toggleAnimation();
+      };
+    
+      React.useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
+   
   return (
     <div className="ed-wrapper">
         {/* left side */}
