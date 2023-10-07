@@ -8,7 +8,7 @@ import college from '../../img/college.png'
 
 const Education = () => {
   return (
-    <div className="wrapper">
+    <div className="ed-wrapper">
         {/* left side */}
         <div className="e-left">
            <span className='heading'>My</span> 

@@ -59,37 +59,7 @@
     color: var(--gray);
     margin-top: 10px;
 }
-.primarText {
-  color: #1f3e72;
-  font-weight: 600;
-  font-size: 1.3rem!important;
-}
-.paddings {
-  padding: 1.5rem;
-}
 
-.innerWidth {
-  width: 100%;
-}
-
-.flexCenter {
-  display: flex;
-  row-gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.flexStart {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.flexColStart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
 
   
 

@@ -3,7 +3,9 @@
     "name": "Real Estate Website",
     "price": "React",
     "detail": "Jakarta Garden City Street, Cakung.hi this is to ",
-    "image": "./lmhousing.png"
+    "image": "./lmhousing.png",
+    "view": "https://lm-housing-real-estate-web.pages.dev/",
+    "github": "https://github.com/SruthiDasN/LmHousing-react-frontend"
   },
   {
     "name": "Asatti Garden City",
