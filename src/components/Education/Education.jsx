@@ -5,8 +5,17 @@ import mba from '../../img/mba.png'
 import btech from '../../img/btech.png'
 import diploma from '../../img/diploma.png'
 import college from '../../img/college.png'
+import { useSpring, animated } from '@react-spring/web'
+
 
 const Education = () => {
+ 
+    const springProps = useSpring({
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(360deg)' },
+        config: { duration: 2000 }, // Adjust the duration as needed
+        reset: true, // Add reset option to restart the animation when it finishes
+      }); 
   return (
     <div className="ed-wrapper">
         {/* left side */}
@@ -26,7 +35,8 @@ const Education = () => {
 
         {/* right side */}
         <div className='e-right' style={{left: '4rem'}}>
-            <div className="e-minCircle">
+       
+            <animated.div className="e-minCircle" style={{...springProps}} >
                 <div className="e-secCircle">
                     <img src={mtech} alt="mtech" />
                 </div>
@@ -42,7 +52,9 @@ const Education = () => {
                 <div className="e-secCircle">
                     <img src={college} alt="college" />
                 </div>
-            </div>
+            </animated.div>
+          
+            
             {/* background circles */}
             <div className='e-backCircle blueCircle'></div>
             <div className='e-backCircle yellowCircle'></div>

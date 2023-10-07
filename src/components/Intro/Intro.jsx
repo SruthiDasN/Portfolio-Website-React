@@ -9,13 +9,23 @@ import thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 
+import { useSpring, animated } from '@react-spring/web'
+
+
 
 
 
 
 const Intro = () => {
  
-  
+  const springs = useSpring({
+    from: { x: 0 },
+    to: { x: -50 },
+  });
+  const sp = useSpring({
+    from: { x: 0 },
+    to: { x: 50 },
+  });
 
   return (
     <div className="i-wrapper">
@@ -47,15 +57,25 @@ const Intro = () => {
           <img src={Vector2} alt="" />
           <img src={sruthidasn} alt="" />
 
-          <div  
-                    
-            style={{top: '-4%', left:'68%'}}>
+          <animated.div                      
+            style={{
+              top: '-4%', 
+              left:'68%',
+              ...springs,
+          }}
+            
+            >
             <FloatingDiv image={Crown} text1='MERN' text2='Developer'/>
-          </div>
+          </animated.div>
 
-          <div style={{top: '18rem', left:'0rem'}}>
+          <animated.div 
+          style={{
+            top: '18rem', 
+            left:'0rem',
+            ...sp,
+            }}>
             <FloatingDiv image={thumbup} text1='Self-learned' text2='Achiever'/>
-          </div>
+          </animated.div>
           {/* Blur divs */}
           <div className='blur' style={{ background: "rgb(238 210 255)"}}></div>
           <div className="blur" 
