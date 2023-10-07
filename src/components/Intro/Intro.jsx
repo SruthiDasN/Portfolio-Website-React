@@ -11,7 +11,12 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv'
 
 
 
+
+
 const Intro = () => {
+ 
+  
+
   return (
     <div className="i-wrapper">
         <div className="i-left">
@@ -41,7 +46,10 @@ const Intro = () => {
           <img src={Vector1} alt="" />
           <img src={Vector2} alt="" />
           <img src={sruthidasn} alt="" />
-          <div style={{top: '-4%', left:'68%'}}>
+
+          <div  
+                    
+            style={{top: '-4%', left:'68%'}}>
             <FloatingDiv image={Crown} text1='MERN' text2='Developer'/>
           </div>
 

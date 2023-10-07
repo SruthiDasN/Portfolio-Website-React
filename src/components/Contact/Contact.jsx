@@ -26,7 +26,7 @@ const Contact = () => {
   const [status, setStatus] = useState(false)
 
   return (
-    <div className='wrapper'>
+    <div className='contact-wrapper'>
         <div className="c-left">           
                 <span className='heading'>Get in Touch</span>
                 <span className='primaryText'>Contact Me</span>
