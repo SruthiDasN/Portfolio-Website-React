@@ -1,0 +1,31 @@
+[
+    {
+      "name": "Advanced React",
+      "source": "Meta",      
+      "image": "./advancedReact.png",
+      "view": "https://www.coursera.org/account/accomplishments/certificate/YSWE4P257F4Q"      
+    },
+    
+    {
+      "name": "React Basics",
+      "source": "Meta",      
+      "image": "./reactBasics.png",
+      "view": "https://www.coursera.org/account/accomplishments/certificate/UPFALWW4ECZE"      
+    },
+    {
+      "name": "Programming with javaScript",
+      "source": "Meta",      
+      "image": "./javaScript.png",
+      "view": "https://www.coursera.org/account/accomplishments/certificate/Y34HN3NCL4BE"      
+    },
+   
+    {
+      "name": "Introduction to Front-end Development",
+      "source": "Meta",      
+      "image": "./frontend.png",
+      "view": "https://www.coursera.org/account/accomplishments/certificate/QFEEFRUYM3B8"
+     
+    }
+   
+  ]
+  

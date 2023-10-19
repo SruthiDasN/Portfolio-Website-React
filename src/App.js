@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import './App.css'
 import Intro from "./components/Intro/Intro";
 import Experience from "./components/Experience/Experience";
+import Certifications from "./components/Certifications/Certification"
 import Education from "./components/Education/Education";
 
 import Contact from "./components/Contact/Contact";
@@ -24,6 +25,7 @@ function App() {
       <Navbar />
       <Intro />
       <Experience />
+      <Certifications />
       <Education /> 
       <Portfolio />  
       <Contact />

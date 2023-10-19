@@ -25,7 +25,7 @@ const Portfolio = () => {
                         <SwiperSlide key={i}>
                             <div className="r-card">
                                 <img src={card.image} alt="home" />                                    
-                                <span>{card.price}</span>                              
+                                <span>{card.tech}</span>                              
 
                                 <span className='primaryText'>{card.name}</span>
                                 <span className='secondaryText'>{card.detail}</span>

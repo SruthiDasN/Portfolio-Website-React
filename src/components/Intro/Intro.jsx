@@ -81,7 +81,8 @@ const Intro = () => {
             <div className="FloatingDiv float">
               <FloatingDiv image={thumbup} text1='Self-learned' text2='Achiever'/>
             </div>
-          </animated.div>
+          </animated.div>           
+          
           {/* Blur divs */}
           <div className='blur' style={{ background: "rgb(238 210 255)"}}></div>
           <div className="blur" 

@@ -1,7 +1,7 @@
 [
   {
     "name": "Real Estate Website",
-    "price": "Responsive React Project",
+    "tech": "Responsive React Project",
     "detail": "This is the front-end portion of an ongoing MERN stack real estate project. Deployed version of this project focus on design & animations.Functionality is still under development",
     "image": "./lmhousing.png",
     "view": "https://lm-housing-real-estate-web.pages.dev/",
@@ -10,7 +10,7 @@
   
   {
     "name": "Dice Game",
-    "price": "React",
+    "tech": "React",
     "detail": "Exciting React project where user can roll the dice and get a point if the dice value matches with the previously selected number. Created this simple yet engaging dice game using React, enhancing my skills in front-end development, state management, and user interface design.",
     "image": "./diceGame.png",
     "view": "https://dice-game-react.pages.dev/",
@@ -18,7 +18,7 @@
   },
   {
     "name": "Book Store",
-    "price": "MERN - Stack",
+    "tech": "MERN - Stack",
     "detail": "The main focus of this project  is on core aspects of the MERN stack such as Building backend CURD operations | Setting up routing | Handling CORS policies | Performing MongoDB operations | Implementing frontend CURD & routing",
     "image": "./bookStoreWhite.png",
     "view": "https://Not-deployed.pages",
@@ -27,7 +27,7 @@
  
   {
     "name": "Real Estate Website - Ongoing",
-    "price": "MERN - Stack",
+    "tech": "MERN - Stack",
     "detail": "A feature-rich  real estate website using the MERN stack. Currently working in the integration phase where both front-end & back-end components are significantly being developed. User Authentication & Authorization | Property listing | Favorites & Booking",
     "image": "./lmhousing.png",
     "view": "https://lm-housing-real-estate-web.pages.dev/",
@@ -35,7 +35,7 @@
   },
   {
     "name": "Contact Us - Practice Project",
-    "price": "React",
+    "tech": "React",
     "detail": "primary aim of gaining practical experience and improving my React skills. The project serves as a simple landing page. Used this project as an educational tool to deepen understanding of React concepts, component composition, github & deployment",
     "image": "./contactUs.png",
     "view": "https://contactus-react.pages.dev/",
