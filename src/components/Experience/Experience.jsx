@@ -35,7 +35,7 @@ const Experience = () => {
             <Card 
               icon = {teacher}
               heading = { 'Assistant Professor' }
-              duration = {'2018 - 2022'}              
+              duration = {'MGMPTC | 2018 - 2022'}              
               detail = {'Taught computing Fundamentals | part of college website maintenance team.'}
             />
           </div>
@@ -44,7 +44,7 @@ const Experience = () => {
             <Card 
               icon = {it}
               heading = { 'Jr Process Consultant' }
-              duration = {'2016'}              
+              duration = {'SFO Technologies | 2016'}              
               detail = {'Data Gathering and Analysis | Documentation and Reporting | Cross-Functional Collaboration | Change Management Support'}
             />
           </div>

@@ -1,16 +1,15 @@
 .c-wrapper {
     width: 10rem;
-    height: 13.6rem;
+    height: 13.7rem;
     position: absolute;
     display: flex;
-    flex-direction: column;
-    /* gap: .2rem; */
-    /* width: 10rem; */
+    flex-direction: column;    
     text-align: center;
     background: rgba(255, 255, 255, 0.26);
     border: 7px solid var(--orangeCard);
     border-radius: 20px;
     padding: 0px 26px 2rem 26px;
+    
  
 }
 

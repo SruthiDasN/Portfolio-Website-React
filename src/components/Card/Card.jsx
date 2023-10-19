@@ -7,7 +7,7 @@ const Card = ({ icon, heading, duration, detail }) => {
     <div className="c-wrapper">             
         <img src={icon} alt="" />
         <span>{heading}</span>       
-        <span>{duration}</span>
+        <span className='secondaryText'>{duration}</span>
         <span className='secondaryText'>{detail}</span>
         
     </div>
