@@ -7,7 +7,7 @@ import diploma from '../../img/diploma.png'
 import college from '../../img/college.png'
 import { useSpring, animated } from '@react-spring/web'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
-import Resume from './Resume.pdf'
+import Sruthi_Das_N from './Sruthi_Das_N.pdf'
 
 
 const Education = () => {
@@ -34,7 +34,7 @@ const Education = () => {
                 achieving excellence in every endeavor.
             </span> 
 
-            <a href={Resume} download>
+            <a href={Sruthi_Das_N} download>
               <button className='button s-button'>Download CV</button>
             </a>
             

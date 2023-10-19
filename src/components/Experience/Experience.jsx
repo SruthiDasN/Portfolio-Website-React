@@ -4,7 +4,7 @@ import Card from '../Card/Card'
 import teacher from '../../img/teacher.png'
 import it from '../../img/it.png'
 import homemaker from '../../img/homemaker.png'
-import Resume from './Resume.pdf'
+import Sruthi_Das_N from './Sruthi_Das_N.pdf'
 
 
 
@@ -22,7 +22,7 @@ const Experience = () => {
              contribute to my overall 
             capabilities.
             </span>
-            <a href={Resume} download>
+            <a href={Sruthi_Das_N} download>
               <button className='button s-button'>Download CV</button>
             </a>
             <div className='blur s-blur1' style={{background: '#ABF1FF94'}}></div>
