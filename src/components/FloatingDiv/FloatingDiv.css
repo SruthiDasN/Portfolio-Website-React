@@ -1,7 +1,7 @@
 .floatingdiv {
     display: flex;    
     justify-content: space-around;
-    background: white;
+    background: rgb(197, 177, 196);
     box-shadow: var(--boxShadow);
     border-radius: 17px;
     align-items: center;

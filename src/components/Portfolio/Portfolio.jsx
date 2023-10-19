@@ -11,32 +11,12 @@ import data from '../../utils/slider.json';
 const Portfolio = () => {
   
   return (
-    <div className=".p-wrapper">
+    <div className=".p-wrapper" id="Portfolio" >
       {/* heading */}
       <div className="p-center">
         <span className="heading">Recent Projects</span>
         <span className="primaryText">Portfolio</span>
-      </div>
-      
-
-      {/* slider */}
-      {/* <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        grabCursor={true}
-        className="portfolio-slider"
-      >
-        <SwiperSlide>
-          <img src={lmhousing} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={airbnb} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={lmhousing} alt="" />
-        </SwiperSlide>
-        
-      </Swiper> */}
+      </div>   
 
           <Swiper {...sliderSettings}>
                 <SliderButtons /> 

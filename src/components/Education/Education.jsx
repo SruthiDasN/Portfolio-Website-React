@@ -6,46 +6,23 @@ import btech from '../../img/btech.png'
 import diploma from '../../img/diploma.png'
 import college from '../../img/college.png'
 import { useSpring, animated } from '@react-spring/web'
-
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import Resume from './Resume.pdf'
 
 
 const Education = () => {
- 
-    const [scrollY, setScrollY] = useState(0);
-    const [animate, setAnimate] = useState(false);
 
-    const toggleAnimation = () => {
-        setAnimate(true);
-        setTimeout(() => {
-          setAnimate(false);
-        }, 2000); // Adjust the duration to match the animation duration
-      };
-
-      const springProps = useSpring({
+    const animate = useScrollAnimation(); 
+    
+    
+    const springProps = useSpring({
         transform: animate ? 'rotate(360deg)' : 'rotate(0deg)',
-        config: { duration: 2000 }, // Adjust the duration as needed
-        onRest: () => {
-          if (animate) {
-            toggleAnimation();
-          }
-        },
+        config: { duration: 3000 }, // Adjust the duration as needed
       });
     
-      const handleScroll = () => {
-        setScrollY(window.scrollY);
-        toggleAnimation();
-      };
-    
-      React.useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
-
    
   return (
-    <div className="ed-wrapper">
+    <div className="ed-wrapper" id='Education' >
         {/* left side */}
         <div className="e-left">
            <span className='heading'>My</span> 
@@ -55,8 +32,11 @@ const Education = () => {
                 empowering me with the knowledge and skills to excel in my chosen field. <br />
                 It has instilled a lifelong passion for learning and a commitment to <br />
                 achieving excellence in every endeavor.
-            </span>           
+            </span> 
+
+            <a href={Resume} download>
               <button className='button s-button'>Download CV</button>
+            </a>
             
             <div className='blur s-blur1' style={{background: '#ABF1FF94'}}></div>
         </div>
@@ -64,23 +44,29 @@ const Education = () => {
         {/* right side */}
         <div className='e-right' style={{left: '4rem'}}>
        
-            <animated.div className="e-minCircle" style={{...springProps}} >
-                <div className="e-secCircle">
-                    <img src={mtech} alt="mtech" />
-                </div>
-                <div className="e-secCircle">
-                    <img src={mba} alt="mba" />
-                </div>
-                <div className="e-secCircle">
-                    <img src={btech} alt="btech" />
-                </div>
-                <div className="e-secCircle">
-                    <img src={diploma} alt="diploma" />
-                </div>
-                <div className="e-secCircle">
-                    <img src={college} alt="college" />
-                </div>
-            </animated.div>
+        <animated.div className="e-minCircle" style={{ ...springProps }}>
+  <div className="e-secCircle">
+    <img src={mtech} alt="mtech" />
+    <div className="image-label">M.Tech</div>
+  </div>
+  <div className="e-secCircle">
+    <img src={mba} alt="mba" />
+    <div className="image-label">MBA</div>
+  </div>
+  <div className="e-secCircle">
+    <img src={btech} alt="btech" />
+    <div className="image-label">B.Tech</div>
+  </div>
+  <div className="e-secCircle">
+    <img src={diploma} alt="diploma" />
+    <div className="image-label">Diploma</div>
+  </div>
+  <div className="e-secCircle">
+    <img src={college} alt="college" />
+    
+  </div>
+</animated.div>
+
           
             
             {/* background circles */}

@@ -8,23 +8,23 @@ import sruthidasn from '../../img/sruthi_das_n.png'
 import thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
-
 import { useSpring, animated } from '@react-spring/web'
+import { Link } from 'react-scroll'
 
 
 
 
 
 
-const Intro = () => {
- 
+
+const Intro = () => { 
   const springs = useSpring({
     from: { x: 0 },
     to: { x: -50 },
   });
   const sp = useSpring({
     from: { x: 0 },
-    to: { x: 50 },
+    to: { x: 50 },   
   });
 
   return (
@@ -40,8 +40,10 @@ const Intro = () => {
                     of my passion for MERN development.
                 </span>
             </div>
-
-            <button className="button i-button">Hire Me</button>
+              
+            <Link spy={true} to='contact' smooth={true} activeClass='activeClass'>
+              <button className="button i-button">Hire Me</button>
+            </Link>
             <div className="i-icons">
                 <a href="https://github.com/SruthiDasN">
                   <img src={ Github } alt="" />
@@ -57,15 +59,17 @@ const Intro = () => {
           <img src={Vector2} alt="" />
           <img src={sruthidasn} alt="" />
 
-          <animated.div                      
+          <animated.div                     
             style={{
-              top: '-4%', 
+              top: '10%', 
               left:'68%',
               ...springs,
           }}
             
             >
+          <div className="FloatingDiv">
             <FloatingDiv image={Crown} text1='MERN' text2='Developer'/>
+          </div>
           </animated.div>
 
           <animated.div 
@@ -74,7 +78,9 @@ const Intro = () => {
             left:'0rem',
             ...sp,
             }}>
-            <FloatingDiv image={thumbup} text1='Self-learned' text2='Achiever'/>
+            <div className="FloatingDiv float">
+              <FloatingDiv image={thumbup} text1='Self-learned' text2='Achiever'/>
+            </div>
           </animated.div>
           {/* Blur divs */}
           <div className='blur' style={{ background: "rgb(238 210 255)"}}></div>

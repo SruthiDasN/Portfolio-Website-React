@@ -41,3 +41,44 @@ textarea {
     flex-direction: column;    
 
 } 
+@media screen and (max-width: 480px) {
+    .contact-wrapper {
+      flex-direction: column;
+      height: auto;
+      padding: 2rem;
+      margin-top: 5rem;
+    }
+  
+    .c-left {
+      text-align: center;
+    }
+  
+    .c-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .c-right form {
+      max-width: 100%; /* Adjust the maximum form width as needed */
+    }
+  
+    .user {
+      width: 100%; /* Make input fields take full width */
+      max-width: 100%; /* Adjust maximum input width as needed */
+    }
+  
+    textarea {
+      height: auto; /* Remove fixed textarea height */
+    }
+  
+    .button {
+      width: 100%; /* Make the button take full width */
+    }
+  
+    .c-blur1 {
+      top: 0;
+      left: 0;
+    }
+  }
+  

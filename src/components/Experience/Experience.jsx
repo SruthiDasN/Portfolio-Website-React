@@ -7,9 +7,11 @@ import homemaker from '../../img/homemaker.png'
 import Resume from './Resume.pdf'
 
 
+
 const Experience = () => {
+  
   return (
-    <div className='wrapper'>
+    <div className='e-wrapper' id='Experience'>
         {/* left side */}
         <div className="e-left">
            <span className='heading'>My</span> 
@@ -34,16 +36,16 @@ const Experience = () => {
               icon = {teacher}
               heading = { 'Assistant Professor' }
               duration = {'2018 - 2022'}              
-              detail = {'Taught computing Fundamentals, part of college website maintenance team.'}
+              detail = {'Taught computing Fundamentals | part of college website maintenance team.'}
             />
           </div>
           {/* second card */}
-          <div style={{ top: '12rem', left:'-4rem' }}>
+          <div style={{ top: '12rem', left:'-4rem'}}>
             <Card 
               icon = {it}
               heading = { 'Jr Process Consultant' }
               duration = {'2016'}              
-              detail = {'Data Gathering and Analysis, Documentation and Reporting, Cross-Functional Collaboration, Change Management Support'}
+              detail = {'Data Gathering and Analysis | Documentation and Reporting | Cross-Functional Collaboration | Change Management Support'}
             />
           </div>
           {/* Third card */}
@@ -52,7 +54,7 @@ const Experience = () => {
               icon = {homemaker}
               heading = { 'Homemaker' }
               duration = {'Present'}              
-              detail = {'Time Management, Organization, Multitasking, Budgeting and Financial Management, Childcare and Development, Emotional Intelligence, Self-Motivation'}
+              detail = {'Time Management | Organization | Multitasking | Budgeting and Financial Management | Childcare and Development | Emotional Intelligence | Self-Motivation'}
             />
           </div>
           <div className='blur s-blur2' style={{ background: 'var(--purple)'}}></div>
