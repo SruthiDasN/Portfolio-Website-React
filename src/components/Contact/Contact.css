@@ -74,6 +74,7 @@ textarea {
   
     .button {
       width: 100%; /* Make the button take full width */
+      margin-bottom: 5rem;
     }
   
     .c-blur1 {
