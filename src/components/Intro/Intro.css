@@ -22,8 +22,7 @@
 }
 
 .i-icons {
-   margin-top: 3rem;
-   display: flex;
+  display: flex;
    gap: 0rem; 
 }
 .i-icons>*{
@@ -35,7 +34,8 @@
 /* Right side */
 .i-right {
     flex: 1 ;
-    position: relative;  
+    position: relative; 
+    
 }
 .i-right>* {
     position: absolute;
@@ -53,14 +53,14 @@
 }
 .i-right>:nth-child(3) {
     transform: scale(.7);
-    left: 15%;
+    left: 9%;
     bottom: 30%;
 }
 
 @media screen and (max-width: 480px) {
     .i-wrapper {
       flex-direction: column;
-      height: 54rem;
+      height: 72rem;
       gap: 7rem;
     }
     .i-right {

@@ -4,17 +4,12 @@ import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-import sruthidasn from '../../img/sruthi_das_n.png'
+import sruthidasn from '../../img/sruthidas.png'
 import thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import { useSpring, animated } from '@react-spring/web'
 import { Link } from 'react-scroll'
-
-
-
-
-
 
 
 const Intro = () => { 
