@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Assistant Professor",
+      "source": "MGMPTC | 2018 - 2022",      
+      "image": "./newteacher.png",
+      "view": "Taught computing Fundamentals | part of college website maintenance team."      
+    },
+    
+    {
+      "name": "Jr Process Consultant",
+      "source": "SFO Technologies | 2016",      
+      "image": "./newit.png",
+      "view": "Data Gathering and Analysis | Documentation and Reporting | Cross-Functional Collaboration | Change Management Support"         
+    },
+    {
+      "name": "Homemakert",
+      "source": "Present",      
+      "image": "./newhomemaker.png",
+      "view": "Time Management | Organization | Multitasking | Budgeting and Financial Management | Childcare and Development | Emotional Intelligence | Self-Motivation"      
+    }
+   
+  ]
+  

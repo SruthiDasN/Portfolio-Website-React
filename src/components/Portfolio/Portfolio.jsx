@@ -4,8 +4,7 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react"
 import { sliderSettings } from '../../utils/common';
 import "swiper/css";
 import data from '../../utils/slider.json';
-// import lmhousing from "../../img/lmhousing.png";
-// import airbnb from "../../img/airbnb.png";
+
 
 
 const Portfolio = () => {

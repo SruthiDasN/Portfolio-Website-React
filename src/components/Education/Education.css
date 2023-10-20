@@ -4,8 +4,13 @@
     height: 90vh;
     margin-top: 4rem;
 }
+.e-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 /* right side */
-e-right {
+.e-right {
     position: relative;    
 }
 .e-minCircle {
@@ -103,7 +108,7 @@ e-right {
         gap: 1rem;
         transform: scale(.5);
         left: 0!important;
-        position: static;
+        position: static;      
        
     }
     .e-mainCircle>* {

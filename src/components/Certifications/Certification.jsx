@@ -7,10 +7,11 @@ import data from '../../utils/certifications.json';
 
 
 
-const Portfolio = () => {
+const Certification = () => {  
   
   return (
-    <div className=".p-wrapper" id="Portfolio" >
+    <div className=".p-wrapper" id='Certification' >
+
       {/* heading */}
       <div className="p-center">
         <span className="heading">Certifications</span>
@@ -18,7 +19,7 @@ const Portfolio = () => {
       </div>   
 
           <Swiper {...sliderSettings}>
-                
+               <SliderButtons /> 
                 {
                     data.map((card, i) => (
                         <SwiperSlide key={i}>
@@ -43,14 +44,14 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Certification;
 
-// const SliderButtons = () => {
-//   const swiper = useSwiper();
-//   return (
-//       <div className="r-buttons">
-//           <button onClick={() => swiper.slidePrev()}>&lt;</button>
-//           <button onClick={() => swiper.slideNext()}>&gt;</button>
-//       </div>
-//   );
-// };
+const SliderButtons = () => {
+  const swiper = useSwiper();
+  return (
+      <div className="r-buttons">
+          <button onClick={() => swiper.slidePrev()}>&lt;</button>
+          <button onClick={() => swiper.slideNext()}>&gt;</button>
+      </div>
+  );
+};

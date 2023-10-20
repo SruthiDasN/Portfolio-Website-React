@@ -10,8 +10,8 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import Sruthi_Das_N from './Sruthi_Das_N.pdf'
 
 
-const Education = () => {
-
+const Education = () => { 
+    
     const animate = useScrollAnimation(); 
     
     
@@ -45,29 +45,26 @@ const Education = () => {
         <div className='e-right' style={{left: '4rem'}}>
        
         <animated.div className="e-minCircle" style={{ ...springProps }}>
-  <div className="e-secCircle">
-    <img src={mtech} alt="mtech" />
-    <div className="image-label">M.Tech</div>
-  </div>
-  <div className="e-secCircle">
-    <img src={mba} alt="mba" />
-    <div className="image-label">MBA</div>
-  </div>
-  <div className="e-secCircle">
-    <img src={btech} alt="btech" />
-    <div className="image-label">B.Tech</div>
-  </div>
-  <div className="e-secCircle">
-    <img src={diploma} alt="diploma" />
-    <div className="image-label">Diploma</div>
-  </div>
-  <div className="e-secCircle">
-    <img src={college} alt="college" />
-    
-  </div>
-</animated.div>
-
-          
+          <div className="e-secCircle">
+            <img src={mtech} alt="mtech" />
+            <div className="image-label">M.Tech</div>
+          </div>
+          <div className="e-secCircle">
+            <img src={mba} alt="mba" />
+            <div className="image-label">MBA</div>
+          </div>
+          <div className="e-secCircle">
+            <img src={btech} alt="btech" />
+            <div className="image-label">B.Tech</div>
+          </div>
+          <div className="e-secCircle">
+            <img src={diploma} alt="diploma" />
+            <div className="image-label">Diploma</div>
+          </div>
+          <div className="e-secCircle">
+            <img src={college} alt="college" />    
+          </div>
+</animated.div>         
             
             {/* background circles */}
             <div className='e-backCircle blueCircle'></div>
