@@ -4,12 +4,13 @@ import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-import sruthidasn from '../../img/sruthidas.png'
+import sruthidasn from '../../img/sruthidasn.png'
 import thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import { useSpring, animated } from '@react-spring/web'
 import { Link } from 'react-scroll'
+
 
 
 const Intro = () => { 
@@ -34,11 +35,12 @@ const Intro = () => {
                     self-learning and a showcase 
                     of my passion for MERN development.
                 </span>
-            </div>
-              
+            </div>           
+
             <Link spy={true} to='contact' smooth={true} activeClass='activeClass'>
               <button className="button i-button">Hire Me</button>
-            </Link>
+            </Link>              
+              
             <div className="i-icons">
                 <a href="https://github.com/SruthiDasN">
                   <img src={ Github } alt="" />

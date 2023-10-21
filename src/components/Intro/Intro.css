@@ -9,16 +9,23 @@
     position: relative;
     flex: 1;
     flex-direction: column;  
-    gap: 2rem;  
+    gap: 2rem; 
+    justify-content: flex-start; 
 }
 .i-name {
     display: flex;
     flex-direction: column;
 }
 
+/* .buttons {
+    display: flex;
+    
+} */
+
 .i-button {
-    width: 6rem;
-    height: 2rem;
+    width: 7.5rem;
+    height: 2.1rem;
+    margin-left: 0;
 }
 
 .i-icons {
